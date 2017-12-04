@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CategoriesVC.swift
 //  Apple_Products
 //
 //  Created by Donald Belliveau on 2017-12-04.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CategoriesVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
