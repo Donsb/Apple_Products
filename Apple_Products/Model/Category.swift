@@ -13,6 +13,7 @@ struct Category {
     /*
      Instance Variables.
      */
+    
     private(set) public var title: String
     private(set) public var imageName: String
     

@@ -8,11 +8,12 @@
 
 import UIKit
 
-class CategoriesVC: UIViewController {
+class CategoriesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     /*
      IBOutlets.
      */
+    
     @IBOutlet weak var categoryTable: UITableView!
     
     
@@ -36,6 +37,19 @@ class CategoriesVC: UIViewController {
     }
     // END Did Receive Memory Warning Function.
     
+    
+    // Number Of Rows In Section Function.
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return DataService.instance.getCategories().count
+    }
+    // END Number Of Rows In Section Function.
+    
+    
+    // Cell For Row At Function.
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
+    // END Cell For Row At Function.
     
 }
 

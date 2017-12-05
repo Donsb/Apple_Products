@@ -32,8 +32,8 @@ class DataService {
     
     
     // Get Categories Function.
-    func getCategories() {
-        
+    func getCategories()-> [Category] {
+        return categories // return the categories array.
     }
     // END Get Categories Function.
     

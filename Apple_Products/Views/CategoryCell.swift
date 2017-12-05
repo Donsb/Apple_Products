@@ -13,6 +13,7 @@ class CategoryCell: UITableViewCell {
     /*
      IBOutlets.
      */
+    
     @IBOutlet weak var categoryImage: UIImageView!
     @IBOutlet weak var categoryTitle: UILabel!
     
@@ -22,21 +23,6 @@ class CategoryCell: UITableViewCell {
      */
     
     
-    // Awake From Nib Function.
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-    // END Awake From Nib Function.
-    
-    
-    // Set Selected Function.
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    // END Set Selected Function.
     
 }
 
