@@ -19,10 +19,10 @@ class DataService {
     
     // Data for CategoriesVC.
     private let categories = [
-        Category(title: "Mac", imageName: "iMacPro.jpg"),
-        Category(title: "iPhone", imageName: "X_SpaceGrey.jpeg"),
-        Category(title: "iPad", imageName: "iPadPro12_Silver.png"),
-        Category(title: "Watch", imageName: "Edition_White.jpeg")
+        Category(title: "", imageName: "MacOS.jpg"),
+        Category(title: "", imageName: "iOS11.png"),
+        Category(title: "", imageName: "iOS11_iPad.jpg"),
+        Category(title: "", imageName: "watchos4.jpg")
     ]
     // END Data for CategoriesVC.
     

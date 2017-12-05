@@ -56,7 +56,7 @@ class CategoriesVC: UIViewController, UITableViewDelegate, UITableViewDataSource
             return CategoryCell()
         }
     }
-    // END Finished Cell For Row At Function.  
+    // END Finished Cell For Row At Function.
     
 }
 
