@@ -165,11 +165,101 @@
                     </view>
                     <connections>
                         <outlet property="productsTable" destination="2ZJ-g1-AdI" id="XYB-Np-aWc"/>
+                        <segue destination="D6q-zg-cV0" kind="show" id="Uhh-qa-w1y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jUD-Bz-sf6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1192.8" y="147.78325123152709"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="W2i-rL-0kk">
+            <objects>
+                <viewController id="D6q-zg-cV0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7fL-Pg-5C9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your Device" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Emp-GZ-KvJ">
+                                <rect key="frame" x="16" y="20" width="343" height="23.333333333333329"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GM9-wb-qH7">
+                                <rect key="frame" x="0.0" y="48.333333333333314" width="375" height="675.66666666666674"/>
+                                <color key="backgroundColor" red="0.74804098419999998" green="0.82290496229999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bNk-1w-Jbl">
+                                    <size key="itemSize" width="178" height="299"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="jV0-uK-YVS" customClass="DevicesCell" customModule="Apple_Products" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="178" height="299"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="178" height="299"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3_LET_Gold" translatesAutoresizingMaskIntoConstraints="NO" id="AYZ-VE-fhW">
+                                                    <rect key="frame" x="0.0" y="0.0" width="178" height="178"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="178" id="HnD-qX-MK7"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apple Watch Series 3 LTE Space Grey" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gal-9j-swZ">
+                                                    <rect key="frame" x="0.0" y="180" width="178" height="46.666666666666657"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$1499.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zAT-xR-guh">
+                                                    <rect key="frame" x="8" y="246.66666666666666" width="162" height="23.333333333333343"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" red="1" green="0.97377445499872584" blue="0.98994120644033223" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="gal-9j-swZ" firstAttribute="top" secondItem="AYZ-VE-fhW" secondAttribute="bottom" constant="2" id="10X-V3-L3n"/>
+                                            <constraint firstItem="gal-9j-swZ" firstAttribute="leading" secondItem="jV0-uK-YVS" secondAttribute="leading" id="32E-Hr-F8p"/>
+                                            <constraint firstItem="AYZ-VE-fhW" firstAttribute="top" secondItem="jV0-uK-YVS" secondAttribute="top" id="5X5-O7-zsX"/>
+                                            <constraint firstItem="zAT-xR-guh" firstAttribute="leading" secondItem="jV0-uK-YVS" secondAttribute="leadingMargin" id="Kmp-VO-u5C"/>
+                                            <constraint firstAttribute="trailing" secondItem="AYZ-VE-fhW" secondAttribute="trailing" id="Tvd-uI-6lf"/>
+                                            <constraint firstAttribute="trailing" secondItem="gal-9j-swZ" secondAttribute="trailing" id="VsN-k6-SsE"/>
+                                            <constraint firstItem="AYZ-VE-fhW" firstAttribute="leading" secondItem="jV0-uK-YVS" secondAttribute="leading" id="X17-Bb-17I"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="zAT-xR-guh" secondAttribute="trailing" id="o8M-CV-D7s"/>
+                                            <constraint firstItem="zAT-xR-guh" firstAttribute="top" secondItem="gal-9j-swZ" secondAttribute="bottom" constant="20" id="oWO-Yy-ieT"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="deviceImage" destination="AYZ-VE-fhW" id="6Ul-VJ-ExR"/>
+                                            <outlet property="devicePrice" destination="zAT-xR-guh" id="4aH-r6-i2G"/>
+                                            <outlet property="deviceTitle" destination="gal-9j-swZ" id="ktg-0S-CoE"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.74804098419999998" green="0.82290496229999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="GM9-wb-qH7" secondAttribute="bottom" id="4ZA-3z-hGS"/>
+                            <constraint firstItem="Emp-GZ-KvJ" firstAttribute="top" secondItem="vpd-rf-Dxh" secondAttribute="top" constant="20" id="8Og-RE-NPK"/>
+                            <constraint firstItem="Emp-GZ-KvJ" firstAttribute="leading" secondItem="vpd-rf-Dxh" secondAttribute="leading" constant="16" id="JbZ-BB-gnN"/>
+                            <constraint firstItem="vpd-rf-Dxh" firstAttribute="trailing" secondItem="Emp-GZ-KvJ" secondAttribute="trailing" constant="16" id="TCX-lX-Htx"/>
+                            <constraint firstItem="GM9-wb-qH7" firstAttribute="trailing" secondItem="vpd-rf-Dxh" secondAttribute="trailing" id="hAP-MF-2vz"/>
+                            <constraint firstItem="GM9-wb-qH7" firstAttribute="leading" secondItem="vpd-rf-Dxh" secondAttribute="leading" id="hwl-Wg-eTa"/>
+                            <constraint firstItem="GM9-wb-qH7" firstAttribute="top" secondItem="Emp-GZ-KvJ" secondAttribute="bottom" constant="5" id="z4H-M7-KHd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vpd-rf-Dxh"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZdI-Ya-vTA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1972" y="196.55172413793105"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fcW-DT-Otk">
