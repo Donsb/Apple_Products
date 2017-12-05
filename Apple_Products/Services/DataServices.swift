@@ -14,18 +14,22 @@ class DataService {
     static let instance = DataService()
     
     /*
-     Data.
+     Data for Category
      */
     
     // Data for CategoriesVC.
     private let categories = [
-        Category(title: "", imageName: "MacOS.jpg"),
-        Category(title: "", imageName: "iOS11.png"),
-        Category(title: "", imageName: "iOS11_iPad.jpg"),
-        Category(title: "", imageName: "watchos4.jpg")
+        Category(title: "Mac", imageName: "MacOS.jpg"),
+        Category(title: "iPhone", imageName: "iOS11.png"),
+        Category(title: "iPad", imageName: "iOS11_iPad.jpg"),
+        Category(title: "Watch", imageName: "watchos4.jpg")
     ]
     // END Data for CategoriesVC.
     
+    
+    /*
+     Data for Products
+     */
     
     // Data for Mac Products
     private let macProducts = [
@@ -67,6 +71,12 @@ class DataService {
         Product(productTitle: "Apple Watch Edition", productImageName: "Edition_White.jpeg")
     ]
     // END Data for Apple Watch Products
+    
+    
+    
+    /*
+     Data for Devices
+     */
     
     
     // Data for iMac Pro Devices.
@@ -156,7 +166,7 @@ class DataService {
         Device(deviceTitle: "iPhone 7 Plus Gold", devicePrice: "$1029.00", deviceImageName: "7Plus_Gold.png"),
         Device(deviceTitle: "iPhone 7 Plus Rose Gold", devicePrice: "$1029.00", deviceImageName: "7Plus_RoseGold.png")
     ]
-    // END Data for iPhone 7
+    // END
     
     
     // Data for iPhone 8
@@ -168,7 +178,7 @@ class DataService {
         Device(deviceTitle: "iPhone 8 Plus Gold", devicePrice: "$1269.00", deviceImageName: "8Plus_Gold.png"),
         Device(deviceTitle: "iPhone 8 Plus Space Grey", devicePrice: "$1269.00", deviceImageName: "8Plus_SpaceGrey.png")
     ]
-    // END Data for iPhone 8
+    // END
     
     
     // Data for iPhone X
@@ -176,7 +186,7 @@ class DataService {
         Device(deviceTitle: "iPhone X Silver", devicePrice: "$1529.00", deviceImageName: "X_Silver.jpeg"),
         Device(deviceTitle: "iPhone X Space Grey", devicePrice: "$1529.00", deviceImageName: "X_SpaceGrey.jpeg")
     ]
-    // END Data for iPhone X
+    // END
     
     
     // Data for iPad Pro
@@ -189,7 +199,7 @@ class DataService {
         Device(deviceTitle: "iPad Pro 10.5\" Space Grey", devicePrice: "$1299.00", deviceImageName: "iPadPro10_SpaceGrey.png"),
         Device(deviceTitle: "iPad Pro 10.5\" Rose Gold", devicePrice: "$1299.00", deviceImageName: "iPadPro10_RoseGold.png")
     ]
-    // END Data for iPad Pro
+    // END
     
     
     // Data for iPad
@@ -198,7 +208,7 @@ class DataService {
         Device(deviceTitle: "iPad Gold", devicePrice: "$579.00", deviceImageName: "iPad_Gold.png"),
         Device(deviceTitle: "iPad Space Grey", devicePrice: "$579.00", deviceImageName: "iPad_SpaceGrey.png")
     ]
-    // END Data for iPad
+    // END
     
     
     // Data for iPad mini 4
@@ -207,7 +217,7 @@ class DataService {
         Device(deviceTitle: "iPad mini 4 Gold", devicePrice: "$549.00", deviceImageName: "iPadMini_Gold.png"),
         Device(deviceTitle: "iPad mini 4 Space Grey", devicePrice: "$549.00", deviceImageName: "iPadMini_SpaceGrey.png")
     ]
-    // END Data for iPad mini 4
+    // END
     
     
     // Data for Apple Watch Series 1
@@ -215,7 +225,7 @@ class DataService {
         Device(deviceTitle: "Apple Watch Series 1 Space Grey", devicePrice: "$369.00", deviceImageName: "1_SpaceGrey.jpeg"),
         Device(deviceTitle: "Apple Watch Series 1 Silver", devicePrice: "$369.00", deviceImageName: "1_Silver.jpeg"),
     ]
-    // END Data for Apple Watch Series 1
+    // END
     
     
     // Data for Apple Watch Series 3
@@ -224,7 +234,7 @@ class DataService {
         Device(deviceTitle: "Apple Watch Series 3 Gold", devicePrice: "$469.00", deviceImageName: "3_Gold.jpeg"),
         Device(deviceTitle: "Apple Watch Series 3 Space Grey", devicePrice: "$469.00", deviceImageName: "3_SpaceGrey.jpeg")
     ]
-    // END Data for Apple Watch Series 3
+    // END
     
     
     // Data for Apple Watch Series 3 LTE
@@ -233,7 +243,7 @@ class DataService {
         Device(deviceTitle: "Apple Watch Series 3 LTE", devicePrice: "$559.00", deviceImageName: "3_LET_Gold.jpeg"),
         Device(deviceTitle: "Apple Watch Series 3 LTE", devicePrice: "$559.00", deviceImageName: "3_LTE_SpaceGrey.jpeg")
     ]
-    // END Data for Apple Watch Series 3 LTE
+    // END
     
     
     // Data for Apple Watch Edition
@@ -241,7 +251,8 @@ class DataService {
         Device(deviceTitle: "Apple Watch Edition White Ceramic", devicePrice: "$1759.00", deviceImageName: "Edition_White.jpeg"),
         Device(deviceTitle: "Apple Watch Edition Grey Ceramic", devicePrice: "$1759.00", deviceImageName: "Edition_Grey.jpeg")
     ]
-    // END Data for Apple Watch Edition
+    // END
+    
     
     
     /*
@@ -249,11 +260,224 @@ class DataService {
      */
     
     
+    // Get Products:
+    
+    // get macProducts Function.
+    func getMacProducts()-> [Product] {
+        return macProducts
+    }
+    
+    
+    // Get iPhone Products.
+    func getiPhoneProducts()-> [Product] {
+        return iPhoneProducts
+    }
+    
+    
+    // Get iPad Products Function.
+    func getiPadProducts()-> [Product] {
+        return iPadProducts
+    }
+    
+    
+    // Get Apple Watch Products Function.
+    func getAppleWatchProducts()-> [Product] {
+        return appleWatchProducts
+    }
+    
+    
+    // Get Devices:
+    
+    // Get iMac Pro Device Function.
+    func getiMacProDevices()-> [Device] {
+        return iMacProDevices
+    }
+    
+    
+    // Get MacBook Device Function.
+    func getMacBookDevices()-> [Device] {
+        return macBookDevices
+    }
+    
+    
+    // Get MacBook Air Device Function.
+    func getMacBookAirDevices()-> [Device] {
+        return macBookAirDevices
+    }
+    
+    
+    // Get MacBook Pro Device Function.
+    func getMacBookProDevices()-> [Device] {
+        return macBookProDevices
+    }
+    
+    
+    // Get iMac Device Function.
+    func getiMacDevices()-> [Device] {
+        return iMacDevices
+    }
+    
+    
+    // Get Mac Pro Device Function.
+    func getmacProDevices()-> [Device] {
+        return macProDevices
+    }
+    
+    
+    // Get iPhone SE Device Function.
+    func getiPhoneSEDevices()-> [Device] {
+        return iPhoneSEDevices
+    }
+    
+    
+    // Get iPhone 6S Device Function.
+    func getiPhone6SDevices()-> [Device] {
+        return iPhone6SDevices
+    }
+    
+    
+    // Get iPhone 7 Device Function
+    func getiPhone7Devices()-> [Device] {
+        return iPhone7Devices
+    }
+    
+    
+    // Get iPhone 8 Device Function
+    func getiPhone8Devices()-> [Device] {
+        return iPhone8Devices
+    }
+    
+    
+    // Get iPhone X Device Function
+    func getiPhoneXDevices()-> [Device] {
+        return iPhoneXDevices
+    }
+    
+    
+    // Get iPad Pro Device Function.
+    func getiPadProDevices()-> [Device] {
+        return iPadProDevices
+    }
+    
+    
+    // Get iPad Device Function
+    func getiPadDevices()-> [Device] {
+        return iPadDevices
+    }
+    
+    
+    // Get iPad mini 4 Device Function
+    func getiPadMini4Devices()-> [Device] {
+        return iPadMini4Devices
+    }
+    
+    
+    // Get Apple Watch Series 1 Device Function.
+    func getAppleWatch1Devices()-> [Device] {
+        return appleWatch1Devices
+    }
+    
+    
+    // Get Apple Watch Series 3 Device Function
+    func getAppleWatch3Devices()-> [Device] {
+        return appleWatch3Devices
+    }
+    
+    
+    // Get Apple Watch Series 3 LTE Device Function
+    func getAppleWatch3LTEDevices()-> [Device] {
+        return appleWatch3LTEDevices
+    }
+    
+    // Get Apple Watch Edition Device Function.
+    func getAppleWatchEditionDevices()-> [Device] {
+        return appleWatchEditionDevices
+    }
+    
+    
     // Get Categories Function.
     func getCategories()-> [Category] {
         return categories // return the categories array.
     }
     // END Get Categories Function.
+    
+    
+    // Get Products Function.
+    func getProducts(forCategoryTitle title: String)-> [Product] {
+        switch title {
+        case "Mac":
+            return macProducts
+        case "iPhone":
+            return iPhoneProducts
+        case "iPad":
+            return iPadProducts
+        case "Watch":
+            return appleWatchProducts
+        default:
+            return iPhoneProducts
+        }
+    }
+    
+    
+    
+    
+    // Get Device Function.
+    func getDevices(forProductTitle title: String)-> [Device] {
+        switch title {
+        case "iMac Pro":
+            return iMacProDevices
+        case "MacBook":
+            return macBookDevices
+        case "MacBook Air":
+            return macBookAirDevices
+        case "MacBook Pro":
+            return macBookProDevices
+        case "iMac":
+            return iMacDevices
+        case "Mac Pro":
+            return macProDevices
+        case "iPhone SE":
+            return iPhoneSEDevices
+        case "iPhone 6S":
+            return iPhone6SDevices
+        case "iPhone 7":
+            return iPhone7Devices
+        case "iPhone 8":
+            return iPhone8Devices
+        case "iPhone X":
+            return iPhoneXDevices
+        case "iPad Pro":
+            return iPadProDevices
+        case "iPad":
+            return iPadDevices
+        case "iPad Mini 4":
+            return iPadMini4Devices
+        case "Apple Watch Series 1":
+            return appleWatch1Devices
+        case "Apple Watch Series 3":
+            return appleWatch3Devices
+        case "Apple Watch Series 3 LTE":
+            return appleWatch3LTEDevices
+        case "Apple Watch Edition":
+            return appleWatchEditionDevices
+        default:
+            return iPhoneXDevices
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
