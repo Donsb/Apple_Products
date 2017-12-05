@@ -23,6 +23,14 @@ class CategoryCell: UITableViewCell {
      */
     
     
+    // UpdateViews Function.
+        //-> This will update the views on the cell.  We pass in a Catagory from the Category (Data) Array.
+    func updateViews(category: Category) {
+        categoryImage.image = UIImage(named: category.imageName) // category.imageName is from the class.
+        categoryTitle.text = category.title
+    }
+    // END UpdateViews Function.
+    
     
 }
 
