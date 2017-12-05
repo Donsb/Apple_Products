@@ -10,6 +10,11 @@ import UIKit
 
 class CategoriesVC: UIViewController {
     
+    /*
+     IBOutlets.
+     */
+    @IBOutlet weak var categoryTable: UITableView!
+    
     
     /*
      Functions.
