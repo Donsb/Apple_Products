@@ -90,11 +90,86 @@
                     <navigationItem key="navigationItem" id="sED-4L-BVt"/>
                     <connections>
                         <outlet property="categoryTable" destination="UwX-dL-Mvg" id="gri-gD-rt1"/>
+                        <segue destination="COG-fc-Bg4" kind="show" id="sYZ-O3-7RR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="375.19999999999999" y="35.467980295566505"/>
+        </scene>
+        <!--ProductsVC-->
+        <scene sceneID="KZN-Ux-BfT">
+            <objects>
+                <viewController id="COG-fc-Bg4" customClass="ProductsVC" customModule="Apple_Products" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e08-Fr-83d">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your Apple Watch Model" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fse-Lq-FN7">
+                                <rect key="frame" x="16" y="20" width="343" height="23.333333333333329"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2ZJ-g1-AdI">
+                                <rect key="frame" x="0.0" y="48.333333333333314" width="375" height="675.66666666666674"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="155" id="djU-MT-w4q" customClass="ProductsCell" customModule="Apple_Products" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="155"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="djU-MT-w4q" id="AZS-OM-aao">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="155"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3_LET_Gold" translatesAutoresizingMaskIntoConstraints="NO" id="qir-wg-ZHu">
+                                                    <rect key="frame" x="0.0" y="3" width="375" height="148.66666666666666"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="148.66999999999999" id="rdq-4e-kcf"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="APPLE WATCH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qtn-M2-Ixn">
+                                                    <rect key="frame" x="15" y="36" width="352" height="78"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="qir-wg-ZHu" secondAttribute="bottom" constant="3" id="7Ew-TZ-Iq4"/>
+                                                <constraint firstItem="qir-wg-ZHu" firstAttribute="leading" secondItem="AZS-OM-aao" secondAttribute="leading" id="8TP-F7-WfT"/>
+                                                <constraint firstItem="qir-wg-ZHu" firstAttribute="top" secondItem="AZS-OM-aao" secondAttribute="top" constant="3" id="GE9-7h-ATg"/>
+                                                <constraint firstAttribute="trailing" secondItem="qir-wg-ZHu" secondAttribute="trailing" id="mVH-pP-GsY"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="pridcutTitle" destination="Qtn-M2-Ixn" id="zNh-sy-eej"/>
+                                            <outlet property="productImage" destination="qir-wg-ZHu" id="GVP-LE-Ouo"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.74804098419999998" green="0.82290496229999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fse-Lq-FN7" firstAttribute="top" secondItem="BfS-FN-Bj0" secondAttribute="top" constant="20" id="1d5-Tm-w0A"/>
+                            <constraint firstItem="2ZJ-g1-AdI" firstAttribute="top" secondItem="fse-Lq-FN7" secondAttribute="bottom" constant="5" id="8hU-MY-hgC"/>
+                            <constraint firstAttribute="bottom" secondItem="2ZJ-g1-AdI" secondAttribute="bottom" id="SZA-Vx-oBI"/>
+                            <constraint firstItem="2ZJ-g1-AdI" firstAttribute="leading" secondItem="BfS-FN-Bj0" secondAttribute="leading" id="TiO-o2-QDD"/>
+                            <constraint firstItem="BfS-FN-Bj0" firstAttribute="trailing" secondItem="fse-Lq-FN7" secondAttribute="trailing" constant="16" id="V59-Pe-t3h"/>
+                            <constraint firstItem="fse-Lq-FN7" firstAttribute="leading" secondItem="BfS-FN-Bj0" secondAttribute="leading" constant="16" id="hrJ-ch-CNf"/>
+                            <constraint firstItem="2ZJ-g1-AdI" firstAttribute="trailing" secondItem="BfS-FN-Bj0" secondAttribute="trailing" id="puD-nk-HOB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BfS-FN-Bj0"/>
+                    </view>
+                    <connections>
+                        <outlet property="productsTable" destination="2ZJ-g1-AdI" id="XYB-Np-aWc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jUD-Bz-sf6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1192.8" y="147.78325123152709"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fcW-DT-Otk">
@@ -120,6 +195,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="3_LET_Gold" width="270" height="275"/>
         <image name="MacOS" width="610" height="433"/>
     </resources>
 </document>
