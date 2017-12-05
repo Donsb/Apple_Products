@@ -25,7 +25,6 @@ class ProductsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    // END View Did Load Function.
     
     
     // Did Receive Memory Warning Function.
@@ -33,7 +32,6 @@ class ProductsVC: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    // END Did Receive Memory Warning Function.
     
 }
 

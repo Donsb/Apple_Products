@@ -18,6 +18,5 @@ class ProductsCell: UITableViewCell {
     @IBOutlet weak var pridcutTitle: UILabel!
     
 }
-// END ProductCell class.
 
 // ProductsCell: 

@@ -29,7 +29,6 @@ class CategoryCell: UITableViewCell {
         categoryImage.image = UIImage(named: category.imageName) // category.imageName is from the class.
         categoryTitle.text = category.title
     }
-    // END UpdateViews Function.
     
     
 }

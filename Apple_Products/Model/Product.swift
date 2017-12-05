@@ -27,6 +27,5 @@ struct Product {
         self.productImageName = productImageName
     }
 }
-// END struct Product.
 
 // Product: 

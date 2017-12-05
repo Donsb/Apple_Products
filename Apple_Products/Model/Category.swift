@@ -26,10 +26,8 @@ struct Category {
         self.title = title
         self.imageName = imageName
     }
-    // END init.
     
 }
-// END struct Category.
 
 // Category: 
 

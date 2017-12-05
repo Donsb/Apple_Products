@@ -40,7 +40,6 @@ class DataService {
         Product(productTitle: "iMac", productImageName: "iMac_4K_21inch.jpeg"),
         Product(productTitle: "Mac Pro", productImageName: "MacPro.jpeg")
     ]
-    // END Data for Mac Products
     
     
     // Data for iPhone Products
@@ -51,7 +50,6 @@ class DataService {
         Product(productTitle: "iPhone 8", productImageName: "8_Silver.png"),
         Product(productTitle: "iPhone X", productImageName: "X_Silver.jpeg")
     ]
-    // END Data for iPhone Products
     
     
     // Data for iPad Products
@@ -60,7 +58,6 @@ class DataService {
         Product(productTitle: "iPad", productImageName: "iPad_Silver.png"),
         Product(productTitle: "iPad Mini 4", productImageName: "iPadMini_Silver.png")
     ]
-    // END Data for iPad Products
     
     
     // Data for Apple Watch Products
@@ -70,7 +67,6 @@ class DataService {
         Product(productTitle: "Apple Watch Series 3 LTE", productImageName: "3_LTE_Silver.jpeg"),
         Product(productTitle: "Apple Watch Edition", productImageName: "Edition_White.jpeg")
     ]
-    // END Data for Apple Watch Products
     
     
     
@@ -83,7 +79,6 @@ class DataService {
     private let iMacProDevices = [
         Device(deviceTitle: "iMac Pro", devicePrice: "$4999.99", deviceImageName: "iMacPro.jpg")
     ]
-    // END Data for iMac Pro Devices.
     
     
     // Data for MacBook Devices
@@ -93,14 +88,12 @@ class DataService {
         Device(deviceTitle: "MacBook Rose Gold", devicePrice: "$1729.00", deviceImageName: "MacBook_RoseGold.jpeg"),
         Device(deviceTitle: "MacBook Silver", devicePrice: "$1729.00", deviceImageName: "MacBook_Silver.jpeg")
     ]
-    // END Data for MacBook Devices
     
     
     // Data for MacBook Air Devices
     private let macBookAirDevices = [
         Device(deviceTitle: "MacBook Air 13", devicePrice: "$1199.00", deviceImageName: "MacBookAir_13inch.jpeg")
     ]
-    // END Data for MacBook Air Devices
     
     
     // Data for MacBook Pro Devices
@@ -110,7 +103,6 @@ class DataService {
         Device(deviceTitle: "MacBook Pro 15\" Space Grey", devicePrice: "$3699.00", deviceImageName: "MacBookPro_15inch_SpaceGrey.jpeg"),
         Device(deviceTitle: "MacBook Pro 15\" Silver", devicePrice: "$3699.00", deviceImageName: "MacBookPro_15inch_Silver.jpeg"),
     ]
-    // END Data for MacBook Pro Devices
     
     
     // Data for iMac Devices
@@ -119,14 +111,12 @@ class DataService {
         Device(deviceTitle: "iMac 21.5\" 4K Display", devicePrice: "$1729.00", deviceImageName: "iMac_4K_21inch.jpeg"),
         Device(deviceTitle: "iMac 27\" 5K Display", devicePrice: "$2399.00", deviceImageName: "iMac_27inch.jpeg")
     ]
-    // END Data for iMac Devices
     
     
     // Data for Mac Pro Devices
     private let macProDevices = [
         Device(deviceTitle: "Mac Pro", devicePrice: "$3499.00", deviceImageName: "MacPro.jpeg")
     ]
-    // END Data for Mac Pro Devices
     
     
     // Data for iPhone SE
@@ -136,7 +126,6 @@ class DataService {
         Device(deviceTitle: "iPhone SE Space Grey", devicePrice: "$599.00", deviceImageName: "SE_SpaceGrey.jpeg"),
         Device(deviceTitle: "iPhone SE Rose Gold", devicePrice: "$599.00", deviceImageName: "SE_RoseGold.jpeg")
     ]
-    // END Data for iPhone SE
     
     
     // Data for iPone 6S
@@ -150,7 +139,6 @@ class DataService {
         Device(deviceTitle: "iPhone 6S Plus Space Grey", devicePrice: "$869.00", deviceImageName: "6SPlus_SpaceGrey.jpeg"),
         Device(deviceTitle: "iPhone 6S Plus Rose Gold", devicePrice: "$869.00", deviceImageName: "6SPlus_RoseGold.jpeg")
     ]
-    // END Data for iPone 6S
     
     
     // Data for iPhone 7
@@ -166,7 +154,6 @@ class DataService {
         Device(deviceTitle: "iPhone 7 Plus Gold", devicePrice: "$1029.00", deviceImageName: "7Plus_Gold.png"),
         Device(deviceTitle: "iPhone 7 Plus Rose Gold", devicePrice: "$1029.00", deviceImageName: "7Plus_RoseGold.png")
     ]
-    // END
     
     
     // Data for iPhone 8
@@ -178,7 +165,6 @@ class DataService {
         Device(deviceTitle: "iPhone 8 Plus Gold", devicePrice: "$1269.00", deviceImageName: "8Plus_Gold.png"),
         Device(deviceTitle: "iPhone 8 Plus Space Grey", devicePrice: "$1269.00", deviceImageName: "8Plus_SpaceGrey.png")
     ]
-    // END
     
     
     // Data for iPhone X
@@ -186,7 +172,6 @@ class DataService {
         Device(deviceTitle: "iPhone X Silver", devicePrice: "$1529.00", deviceImageName: "X_Silver.jpeg"),
         Device(deviceTitle: "iPhone X Space Grey", devicePrice: "$1529.00", deviceImageName: "X_SpaceGrey.jpeg")
     ]
-    // END
     
     
     // Data for iPad Pro
@@ -199,7 +184,6 @@ class DataService {
         Device(deviceTitle: "iPad Pro 10.5\" Space Grey", devicePrice: "$1299.00", deviceImageName: "iPadPro10_SpaceGrey.png"),
         Device(deviceTitle: "iPad Pro 10.5\" Rose Gold", devicePrice: "$1299.00", deviceImageName: "iPadPro10_RoseGold.png")
     ]
-    // END
     
     
     // Data for iPad
@@ -208,7 +192,6 @@ class DataService {
         Device(deviceTitle: "iPad Gold", devicePrice: "$579.00", deviceImageName: "iPad_Gold.png"),
         Device(deviceTitle: "iPad Space Grey", devicePrice: "$579.00", deviceImageName: "iPad_SpaceGrey.png")
     ]
-    // END
     
     
     // Data for iPad mini 4
@@ -217,7 +200,6 @@ class DataService {
         Device(deviceTitle: "iPad mini 4 Gold", devicePrice: "$549.00", deviceImageName: "iPadMini_Gold.png"),
         Device(deviceTitle: "iPad mini 4 Space Grey", devicePrice: "$549.00", deviceImageName: "iPadMini_SpaceGrey.png")
     ]
-    // END
     
     
     // Data for Apple Watch Series 1
@@ -225,7 +207,6 @@ class DataService {
         Device(deviceTitle: "Apple Watch Series 1 Space Grey", devicePrice: "$369.00", deviceImageName: "1_SpaceGrey.jpeg"),
         Device(deviceTitle: "Apple Watch Series 1 Silver", devicePrice: "$369.00", deviceImageName: "1_Silver.jpeg"),
     ]
-    // END
     
     
     // Data for Apple Watch Series 3
@@ -234,7 +215,6 @@ class DataService {
         Device(deviceTitle: "Apple Watch Series 3 Gold", devicePrice: "$469.00", deviceImageName: "3_Gold.jpeg"),
         Device(deviceTitle: "Apple Watch Series 3 Space Grey", devicePrice: "$469.00", deviceImageName: "3_SpaceGrey.jpeg")
     ]
-    // END
     
     
     // Data for Apple Watch Series 3 LTE
@@ -243,7 +223,6 @@ class DataService {
         Device(deviceTitle: "Apple Watch Series 3 LTE", devicePrice: "$559.00", deviceImageName: "3_LET_Gold.jpeg"),
         Device(deviceTitle: "Apple Watch Series 3 LTE", devicePrice: "$559.00", deviceImageName: "3_LTE_SpaceGrey.jpeg")
     ]
-    // END
     
     
     // Data for Apple Watch Edition
@@ -251,7 +230,6 @@ class DataService {
         Device(deviceTitle: "Apple Watch Edition White Ceramic", devicePrice: "$1759.00", deviceImageName: "Edition_White.jpeg"),
         Device(deviceTitle: "Apple Watch Edition Grey Ceramic", devicePrice: "$1759.00", deviceImageName: "Edition_Grey.jpeg")
     ]
-    // END
     
     
     
@@ -399,7 +377,6 @@ class DataService {
     func getCategories()-> [Category] {
         return categories // return the categories array.
     }
-    // END Get Categories Function.
     
     
     // Get Products Function.
@@ -467,21 +444,7 @@ class DataService {
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 }
 // END class DataService.
 
-// Services:  
+// Services:

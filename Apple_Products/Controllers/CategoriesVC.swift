@@ -28,7 +28,6 @@ class CategoriesVC: UIViewController, UITableViewDelegate, UITableViewDataSource
         categoryTable.dataSource = self
         categoryTable.delegate = self
     }
-    // END View Did Load Function.
     
     
     // Did Receive Memory Warning Function.
@@ -36,14 +35,12 @@ class CategoriesVC: UIViewController, UITableViewDelegate, UITableViewDataSource
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    // END Did Receive Memory Warning Function.
     
     
     // Number Of Rows In Section Function.
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return DataService.instance.getCategories().count
     }
-    // END Number Of Rows In Section Function.
     
     
     // Cell For Row At Function.
@@ -56,7 +53,6 @@ class CategoriesVC: UIViewController, UITableViewDelegate, UITableViewDataSource
             return CategoryCell()
         }
     }
-    // END Finished Cell For Row At Function.
     
 }
 
