@@ -8,7 +8,13 @@
 
 import UIKit
 
-class ProductsVC: UIViewController {
+class ProductsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    /*
+     Instance Variables
+     */
+    
+    private(set) public var products = [Product]()
     
     /*
      IBOutlets
@@ -24,6 +30,8 @@ class ProductsVC: UIViewController {
     // View Did Load Function.
     override func viewDidLoad() {
         super.viewDidLoad()
+        productsTable.delegate = self
+        productsTable.dataSource = self
     }
     
     
@@ -33,7 +41,27 @@ class ProductsVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    // Number of Rows In Section
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return DataService.instance.getProducts(forCategoryTitle: categories.title)
+    }
+    
+    
+    // Cell For Row At
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
+    
+    // Did Select Row At IndexPath Function.
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        <#code#>
+    }
+    
+    func initProducts(category: Category) {
+        products = DataService.instance.getProducts(forCategoryTitle: category.title)
+    }
 }
 
 
-// ProductsVC:  
+// ProductsVC:  Added TableView Delegate and DataSource.  Added the 2 DataSource Functions.  Added function initProducts and Instance Variables.

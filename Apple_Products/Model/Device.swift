@@ -27,7 +27,8 @@ struct Device {
         self.devicePrice = devicePrice
         self.deviceImageName = deviceImageName
     }
-    // END init.
+    
+    
 }
 
 // Device: 

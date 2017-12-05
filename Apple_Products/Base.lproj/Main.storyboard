@@ -90,7 +90,7 @@
                     <navigationItem key="navigationItem" id="sED-4L-BVt"/>
                     <connections>
                         <outlet property="categoryTable" destination="UwX-dL-Mvg" id="gri-gD-rt1"/>
-                        <segue destination="COG-fc-Bg4" kind="show" id="sYZ-O3-7RR"/>
+                        <segue destination="COG-fc-Bg4" kind="show" identifier="ProductsVC" id="sYZ-O3-7RR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -165,17 +165,17 @@
                     </view>
                     <connections>
                         <outlet property="productsTable" destination="2ZJ-g1-AdI" id="XYB-Np-aWc"/>
-                        <segue destination="D6q-zg-cV0" kind="show" id="Uhh-qa-w1y"/>
+                        <segue destination="D6q-zg-cV0" kind="show" identifier="DevicesVC" id="Uhh-qa-w1y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jUD-Bz-sf6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1192.8" y="147.78325123152709"/>
         </scene>
-        <!--View Controller-->
+        <!--DevicesVC-->
         <scene sceneID="W2i-rL-0kk">
             <objects>
-                <viewController id="D6q-zg-cV0" sceneMemberID="viewController">
+                <viewController id="D6q-zg-cV0" customClass="DevicesVC" customModule="Apple_Products" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7fL-Pg-5C9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

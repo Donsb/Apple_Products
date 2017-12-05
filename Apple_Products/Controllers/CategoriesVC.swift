@@ -54,6 +54,38 @@ class CategoriesVC: UIViewController, UITableViewDelegate, UITableViewDataSource
         }
     }
     
+    
+    // Did Select Row At Index Path Function
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let category = DataService.instance.getCategories()[indexPath.row]
+        performSegue(withIdentifier: "ProductsVC", sender: category)
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let productsVC = segue.destination as? ProductsVC {
+            assert(sender as? Category != nil)
+            productsVC.initProducts(category: sender as! Category)
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
 
-// CategoriesVC: 
+// CategoriesVC: Added identifiers to segues in Storyboard.  Added Did Select Row at indexPath Function.  Added Prepare for Segue Function.
