@@ -59,7 +59,6 @@
 				A50EC1BB1FD61541008DF5A4 /* Model */,
 				A50EC1BA1FD6152F008DF5A4 /* Controllers */,
 				A50EC1A81FD61431008DF5A4 /* AppDelegate.swift */,
-				A50EC1AA1FD61431008DF5A4 /* CategoriesVC.swift */,
 				A50EC1AC1FD61431008DF5A4 /* Main.storyboard */,
 				A50EC1AF1FD61431008DF5A4 /* Assets.xcassets */,
 				A50EC1B11FD61431008DF5A4 /* LaunchScreen.storyboard */,
@@ -71,6 +70,7 @@
 		A50EC1BA1FD6152F008DF5A4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A50EC1AA1FD61431008DF5A4 /* CategoriesVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
